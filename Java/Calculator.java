@@ -10,7 +10,24 @@ public class Calculator{
         String a = sc.next() ;
         switch (a) {
             case "+" :
-                System.out.println("The sum of two number is " + number1 + number2);
+                System.out.println("The sum of two number is " + (number1 + number2));
+                break;
+
+            case "-" :
+                System.out.println("The sum of two number is " + (number1 - number2));
+                break;
+
+            case "*" :
+                System.out.println("The sum of two number is " + (number1 * number2));
+                break;
+
+            case "/" :
+             if ( number2 != 0){
+                System.out.println("The sum of two number is " + (number1 / number2));
+             }
+             else{
+                System.out.println("Cannot be divide by Zero");
+             }
                 break;
         
             default:
